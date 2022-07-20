@@ -1,0 +1,307 @@
+.fl-lt{
+    float:left
+}
+.fl-rt{
+    float:right
+}
+.clear{
+    clear:both;
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+    height:0
+}
+.clearfix:before,.clearfix:after{
+    content:'020';
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+    height:0
+}
+.clearfix:after{
+    clear:both
+}
+ul{
+    list-style:none
+}
+.figure{
+    margin:0px
+}
+img{
+    max-width:100%
+}
+a,a:hover,a:active{
+    outline:0px !important
+}
+@font-face{
+    font-family:'FontAwesome';
+    src:url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+    src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+@font-face{
+    font-family:'LatoRegular';
+    src:url('../fonts/lato-regular.eot');
+    src:url('../fonts/lato-regular.eot') format('embedded-opentype'), url('../fonts/lato-regular.woff2') format('woff2'), url('../fonts/lato-regular.woff') format('woff'), url('../fonts/lato-regular.ttf') format('truetype'), url('../fonts/lato-regular.svg#LatoRegular') format('svg')
+}
+@font-face{
+    font-family:'LatoBoldBold';
+    src:url('../fonts/lato-bold.eot');
+    src:url('../fonts/lato-bold.eot') format('embedded-opentype'), url('../fonts/lato-bold.woff2') format('woff2'), url('../fonts/lato-bold.woff') format('woff'), url('../fonts/lato-bold.ttf') format('truetype'), url('../fonts/lato-bold.svg#LatoBoldBold') format('svg')
+}
+@font-face{
+    font-family:'DosisBold';
+    src:url('../fonts/dosis-bold.eot');
+    src:url('../fonts/dosis-bold.eot') format('embedded-opentype'), url('../fonts/dosis-bold.woff2') format('woff2'), url('../fonts/dosis-bold.woff') format('woff'), url('../fonts/dosis-bold.ttf') format('truetype'), url('../fonts/dosis-bold.svg#DosisBold') format('svg')
+}
+body{
+    background:#fff;
+    font-family:'Lato',sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    color:#888;
+    margin:0
+}
+h2{
+    font-size:38px;
+    color:#222;
+    font-family:'Dosis';
+    font-weight:700;
+    margin:35px 0 25px 0;
+    text-align:center;
+    text-transform:uppercase
+}
+h3{
+    font-family:'Dosis',sans-serif;
+    font-weight:600;
+    color:#222;
+    font-size:16px;
+    margin:0 0 5px 0;
+    text-transform:uppercase
+}
+h6{
+    font-size:16px;
+    color:#888;
+    font-family:'Open Sans',sans-serif;
+    font-weight:400;
+    text-align:center;
+    margin:0 0 60px 0
+}
+p{
+    line-height:24px;
+    margin:0
+}
+#capa{
+    font-size:48px;
+    font-family:'Dosis',sans-serif;
+    font-weight:600;
+    color:#f3c;
+    margin:0 0 5px 0;
+    text-transform:uppercase
+}
+.bg-white{
+    background-color:#fff
+}
+.bg-blue{
+    background-color:#49b5e7 !important
+}
+.txt-color{
+    color:#fff !important
+}
+.panel-it{
+    border:1px solid #49b5e7 !important
+}
+#header_outer{
+    background:#fff;
+    padding:30px 0px
+}
+.header_section{
+    position:relative
+}
+.logo{
+    float:left
+}
+.res-nav_click{
+    display:none
+}
+.nav{
+    float:right
+}
+.nav ul{
+    list-style:none;
+    padding:0px
+}
+.nav ul.toggle{
+    display:none;
+    visibility:hidden;
+    height:0px;
+    overflow:hidden;
+    margin-bottom:0
+}
+.nav ul li{
+    display:inline-block;
+    margin:0 23px
+}
+.nav ul li:first-child{
+}
+.nav ul li:last-child{
+    margin:0 0 0 23px
+}
+.nav ul li a{
+    display:block;
+    font-size:18px;
+    color:#222;
+    font-family:'Dosis';
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out
+}
+.nav ul li a:hover{
+    color:#49b5e7
+}
+.top_cont_outer{
+    background:#f9f9f9;
+    position:relative
+}
+.top_cont_inner{
+    background:url(../img/ipad1.png) no-repeat right;
+    padding-top:80px;
+    padding-bottom:50px
+}
+#top_content{
+    position:relative
+}
+.ipad_iphone{
+    position:relative;
+    right:0px
+}
+.top_left_cont{
+    padding:80px 
+}
+.top_left_cont h3{
+    font-size:16px;
+    color:#f56eab;
+    margin:0 0 20px 0;
+    text-align:left;
+    font-family:'Lato';
+    font-weight:700
+}
+.top_left_cont h2{
+    font-size:40px;
+    color:#111;
+    line-height:52px;
+    margin:0 0 26px 0;
+    font-family:'Dosis';
+    text-align:left;
+    font-weight:700
+}
+.top_left_cont p{
+    font-size:16px;
+    color:#888;
+    margin:0 0 30px 0;
+    line-height:26px;
+    font-family:'Lato'
+}
+a.learn_more{
+    margin:0 auto;
+    font-family:'Dosis';
+    display:block;
+    font-size:16px;
+    color:#fff;
+    background:#49b5e7;
+    width:178px;
+    height:46px;
+    line-height:46px;
+    border-radius:3px;
+    text-align:center;
+    font-family:''Dosis'';
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight:600;
+    transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out
+}
+a.learn_more:hover{
+    text-decoration:none;
+    background:#06f;
+    color:#fff
+}
+.bg-lightgreen{
+    background:#fdfdfd
+}
+#portfolio .portfolio-item{
+    margin:0 0 15px;
+    right:0
+}
+#portfolio .portfolio-item .portfolio-link{
+    display:block;
+    position:relative;
+    max-width:400px;
+    margin:0 auto
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+    background:rgba(73, 181, 231, 0.8);
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:all ease 0.5s;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover{
+    opacity:1
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+    position:absolute;
+    width:100%;
+    height:20px;
+    font-size:20px;
+    text-align:center;
+    top:50%;
+    margin-top:-12px;
+    color:white
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
+    margin-top:-12px
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+    margin:0
+}
+#portfolio .portfolio-item .portfolio-caption{
+    max-width:400px;
+    margin:0 auto;
+    background-color:white;
+    text-align:center;
+    padding:25px
+}
+#portfolio .portfolio-item .portfolio-caption h4{
+    text-transform:none;
+    margin:0
+}
+#portfolio .portfolio-item .portfolio-caption p{
+    font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:16px;
+    margin:0
+}
+#portfolio *{
+    z-index:2
+}
+@media (min-width: 767px){
+    #portfolio .portfolio-item{
+        margin:0 0 30px
+    }
+    .plant{
+        font-size:18px;
+        font-weight:bold;
+        padding-left:1.5em
+    }
+    
