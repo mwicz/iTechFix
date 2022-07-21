@@ -1,978 +1,1044 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="Maria Pysklevicz">
-    <title>iTechFix</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="css/agency.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href="css/linecons.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
-      $(document).ready(function(e) {
-        $('.res-nav_click').click(function() {
-          $('ul.toggle').slideToggle(600)
-        });
-        $(document).ready(function() {
-          $(window).bind('scroll', function() {
-            if ($(window).scrollTop() > 0) {
-              $('#header_outer').addClass('fixed');
-            } else {
-              $('#header_outer').removeClass('fixed');
-            }
-          });
-        });
-      });
+<html lang="pt-br">
 
-      function resizeText() {
-        var preferredWidth = 767;
-        var displayWidth = window.innerWidth;
-        var percentage = displayWidth / preferredWidth;
-        var fontsizetitle = 25;
-        var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-        $(".divclass").css("font-size", newFontSizeTitle)
-      }
-    </script>
-  </head>
-  <body>
-    <header id="header_outer">
-      <div class="container">
-        <div class="header_section">
-          <div class="logo"><a href=""><img src="img/logo.png" alt=""></a></div>
-          <nav class="nav" id="nav">
-            <ul class="toggle">
-              <li><a href="#top_content">Home</a></li>
-              <li><a href="#service">Serviços</a></li>
-              <li><a href="#pricing">Preços</a></li>
-              <li><a href="#plantao">Plantão</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-            <ul class="">
-              <li><a href="#top_content">Home</a></li>
-              <li><a href="#service">Serviços</a></li>
-              <li><a href="#pricing">Preços</a></li>
-              <li><a href="#plantao">Plantão</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-          </nav><a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-        </div>
-      </div>
-    </header>
-    <section id="top_content" class="top_cont_outer">
-      <div class="top_cont_inner">
-        <div class="container">
-          <div class="top_content">
-            <div class="row">
-              <div class="col-lg-5 col-sm-7">
-                <div class="top_left_cont flipInY wow animated">
-                  <h1 id="capa">iPhone &amp; iPad</h1>
-                  <h2>Troca de tela<br> Troca de bateria &amp;<br> Troca de frame</h2><a href="#service" class="btn btn-primary btn-lg">Saiba mais</a>
-                </div>
-              </div>
-              <div class="col-lg-7 col-sm-5"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="service" class="bg-light-gray">
-      <div id="portfolio" class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Serviços</h2>
-            <h3 class="section-subheading text-muted">Confira nossos serviços</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 portfolio-item"><a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-              </div><img src="img/broken.png" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>iPhone</h4>
-              <p class="text-muted">Troca de Tela de iPhone</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item"><a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-              </div><img src="img/iphone-back-housing.png" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Frame</h4>
-              <p class="text-muted">Troca de Frame de iPhone</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item"><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-              </div><img src="img/iphone-battery.png" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Bateria</h4>
-              <p class="text-muted">Troca de Bateria de iPhone</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item"><a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-              </div><img src="img/ipad-broken.png" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>iPad</h4>
-              <p class="text-muted">Troca de Tela de iPad</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h1>Identifique o Modelo de seu Aparelho</h1>
-              <h3 class="section-heading">
-                <p><button type="button" class="btn btn-primary btn-lg" href="#portfolioModal5" data-toggle="modal">&nbsp;&nbsp;iPhone&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-primary btn-lg" href="#portfolioModal6" data-toggle="modal">&nbsp;&nbsp;&nbsp;iPad&nbsp;&nbsp;&nbsp;</button></p>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bg-white">
-        <div id="pricing" class="container">
-          <div class="text-center">
-            <h1>Preços</h1>
-            <p>&nbsp;&nbsp;</p>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-it text-center">
-                <div class="panel-heading bg-blue txt-color">
-                  <h3>Tela de iPhone</h3>
-                </div>
-                <div class="panel-body ">
-                  <table class="table table-hover">
-                    <tbody>
-                      <tr>
-                        <td>iPhone 6</td>
-                        <td><i class="fa fa-jpy"></i>10000</td>
-                      </tr>
-                      <tr>
-                        <td>iPhone 6+</td>
-                        <td><i class="fa fa-jpy"></i>12000</td>
-                      </tr>
-                      <tr>
-                        <td>iPhone 6S</td>
-                        <td><i class="fa fa-jpy"></i>12000</td>
-                      </tr>
-                      <tr>
-                        <td>iPhone 6S+</td>
-                        <td><i class="fa fa-jpy"></i>14000</td>
-                      </tr>
-                      <tr>
-                        <td>iPhone 7</td>
-                        <td><i class="fa fa-jpy"></i>14000</td>
-                      </tr>
-                      <tr>
-                        <td>iPhone 7+</td>
-                        <td><i class="fa fa-jpy"></i>15000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-it text-center">
-                <div class="panel-heading bg-blue txt-color">
-                  <h3>iPhone Frame</h3>
-                </div>
-                <div class="panel-body ">
-                  <p>&nbsp;&nbsp;</p>
-                  <p><strong>
-                      <h4>Back Frame</h4>
-                    </strong></p>
-                  <p><strong><span class="">
-                        <h4>Todos os Modelos</h4>
-                      </span></strong></p>
-                  <p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
-                  <p><strong><span class="">
-                        <h4>A partir de</h4>
-                      </span></strong></p>
-                  <p><strong>
-                      <h3><span class="text-primary"><i class="fa fa-jpy" aria-hidden="true"></i>10.000 </span></h3>
-                    </strong></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-it text-center">
-                <div class="panel-heading bg-blue txt-color">
-                  <h3>iPhone Bateria</h3>
-                </div>
-                <div class="panel-body ">
-                  <p>&nbsp;&nbsp;</p>
-                  <p><strong><span class="">
-                        <h4>Bateria</h4>
-                      </span></strong></p>
-                  <p><strong><span class="">
-                        <h4>Todos os Modelos</h4>
-                      </span></strong></p>
-                  <p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
-                  <p><strong>
-                      <h3><span class="text-primary"><i class="fa fa-jpy" aria-hidden="true"></i>7.000</span></h3>
-                    </strong></p>
-                  <p>&nbsp;&nbsp;</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-it text-center">
-                <div class="panel-heading bg-blue txt-color">
-                  <h3>Tela de iPad</h3>
-                </div>
-                <div class="panel-body ">
-                  <p>&nbsp;&nbsp;</p>
-                  <p><strong><span class="">
-                        <h4>Tela de iPad</h4>
-                      </span></strong></p>
-                  <p><strong><span class="">
-                        <h4>Todos os Modelos</h4>
-                      </span></strong></p>
-                  <p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
-                  <p><strong><span class="">
-                        <h4>&nbsp;&nbsp;</h4>
-                      </span></strong></p>
-                  <p><strong>
-                      <h3><span class="text-primary"><i class="fa fa-jpy" aria-hidden="true"></i>15.000</span></h3>
-                    </strong></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section id="plantao">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <h2 class="text-center">Plantão</h2>
-                  <h3 class="text-center">Plantão de Troca de Tela de iPhone</h3>
-                  <div class="col-md-6 col-lg-6 col-xs-12 col-md-offset-3">
-                    <p><i class="fa fa-calendar fa-2x" aria-hidden="true"></i><span class="plant">&nbsp;15 de Outubro</span>
-                      <br> <i class="fa fa-clock-o fa-2x " aria-hidden="true"></i> <span class="plant">&nbsp;13:00 ~ 19:30</span>
-                      <br> &nbsp;<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span class="plant">&nbsp;&nbsp;&nbsp;Hekinan Central Community Center</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="container-fluid">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5504.235551827791!2d136.99426441842473!3d34.88541308533545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x6004900c43271481%3A0xeafc8d2d93bac8c4!2z56Kn5Y2X5biC5Lit5aSu5YWs5rCR6aSo!3m2!1d34.8836416!2d136.9968587!5e0!3m2!1spt-BR!2sjp!4v1506482737656" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </section>
-      <section id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Contato</h2>
-              <h3 class="section-subheading text-muted">Envie-nos uma mensagem</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <form action="mail/contact_me.php" method="post" name="sentMessage" id="contactForm" novalidate>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group"><input type="text" class="form-control" placeholder="Seu Nome *" id="name" required data-validation-required-message="Por favor, digite seu nome.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group"><input type="email" class="form-control" placeholder="Seu e-mail *" id="email" required data-validation-required-message="Por favor, digite seu endereço de email.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group"><input type="tel" class="form-control" placeholder="seu telefone *" id="phone" required data-validation-required-message="Por favor, digite o número do seu telefone.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group"><textarea class="form-control" placeholder="sua mensagem *" id="message" required data-validation-required-message="Por favor, digite sua mensagem."></textarea>
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="col-lg-12 text-center">
-                    <div id="success"></div><button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4"><span class="copyright">Copyright &copy; iTechFix - 2016</span></div>
-            <div class="col-md-4">
-              <ul class="list-inline">
-                <li><a href="https://www.facebook.com/techfix.top/" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="https://www.instagram.com/itechfix.top/" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x "></i><i class="fa fa-instagram fa-stack-1x fa-inverse "></i></span></a></li>
-                <li><a href="https://twitter.com/iTechFixtop" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                <!-- <li><a href="https://api.whatsapp.com/send?phone=  phone number &text=Olá!" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i></span></a></li> --> 
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <ul class="list-inline">
-                <!-- <li><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i></span></li>
-                <li>
-                  <h4><span class=""> Phone Number</span></h4>
-                </li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h2>iPhone</h2>
-                    <p class="item-intro text-muted">Troca de Tela de iPhone.</p><img class="img-responsive img-centered" src="img/broken.png" alt="">
-                    <p>Trocamos sua tela quebrada</p>
-                    <p><strong>Confira nossos preços</strong></p>
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Modelo</th>
-                          <th>Preço</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>iPhone 5</td>
-                          <td><i class="fa fa-jpy"></i>8000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 5S</td>
-                          <td><i class="fa fa-jpy"></i>8000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 5C</td>
-                          <td><i class="fa fa-jpy"></i>8000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone SE</td>
-                          <td><i class="fa fa-jpy"></i>12000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 6</td>
-                          <td><i class="fa fa-jpy"></i>10000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 6+</td>
-                          <td><i class="fa fa-jpy"></i>12000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 6S</td>
-                          <td><i class="fa fa-jpy"></i>12000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 6S+</td>
-                          <td><i class="fa fa-jpy"></i>14000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 7</td>
-                          <td><i class="fa fa-jpy"></i>14000</td>
-                        </tr>
-                        <tr>
-                          <td>iPhone 7+</td>
-                          <td><i class="fa fa-jpy"></i>15000</td>
-                        </tr>
-                      </tbody>
-                    </table><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h2>Frame</h2>
-                    <p class="item-intro text-muted">Troca de Frame de iPhone.</p><img class="img-responsive img-centered" src="img/iphone-back-housing.png" alt="">
-                    <p>A troca do Frame (parte traseira do iPhone, apartir do iPhone 5 até o iPhone 7, são de metal) pode ser realizada quando existem danos, quando o aparelho entorta, quando depois de uma queda a tela não encaixa mais, ou simplesmente para customizar o aparelho.</p>
-                    <p>Existem várias cores disponíveis, além das cores originais de seus respectivos modelos.</p>
-                    <p><strong>Confira nossos preços</strong></p>
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Modelo</th>
-                          <th>Preço</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Todos os Modelos</td>
-                          <td>apartir de <i class="fa fa-jpy"></i>10000</td>
-                        </tr>
-                      </tbody>
-                    </table><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h2>Bateria</h2>
-                    <p class="item-intro text-muted">Troca de Bateria.</p><img class="img-responsive img-centered" src="img/iphone-battery.png" alt="">
-                    <p>É aconselhavel realizar a troca da bateria quando,</p>
-                    <ul class="list-unlisted">
-                      <li> mesmo depois de carregar por várias horas, ela não carrega por completo</li>
-                      <li>depois de pouco uso, a bateria descarrega quase totalmente</li>
-                      <li>quando o aparelho esquenta demasiadamente durante o uso</li>
-                    </ul><strong>Confira nossos preços</strong></p>
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Modelo</th>
-                          <th>Preço</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Todos os Modelos</td>
-                          <td><i class="fa fa-jpy"></i>7000</td>
-                        </tr>
-                      </tbody>
-                    </table><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h2>iPad</h2>
-                    <p class="item-intro text-muted">Troca de Tela de iPad.</p><img class="img-responsive img-centered" src="img/ipad-broken.png" alt="">
-                    <p>Trocamos a tela do seu iPad quebrada.<br> Tempo necessário para troca 12hs.</p><strong>Confira nossos preços</strong></p>
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Modelo</th>
-                          <th>Preço</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Todos os Modelos</td>
-                          <td><i class="fa fa-jpy"></i>15000</td>
-                        </tr>
-                      </tbody>
-                    </table><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h1>Identificando o modelo do iPhone</h1>
-                    <p>Saiba como identificar o modelo do iPhone por meio do número do modelo</p>
-                    <div class="row">
-                      <p>Vá em <kbd>"Ajustes"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i><kbd>"Geral"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i><kbd>"Regulamentação"</kbd></p>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "><img src="img/find-model-iphone-1.png" /></div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "><img src="img/find-model-iphone-2.png" /></div>
-                    </div>
-                    <div class="row">
-                      <h3>iPhone 7</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2016<br> Cores: preto matte, preto brilhante, dourado, ouro rosa e prateado, (PRODUCT)RED<br> Número do modelo:&nbsp;A1660, A1778, A1779&nbsp;(Japão)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone7-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 7 Plus</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2016<br> Capacidade: 32, 128 e 256&nbsp;GB<br> Cores: preto matte, preto brilhante, dourado, ouro rosa e prateado, (PRODUCT)RED<br> Número do modelo:&nbsp;A1661, A1784, A1785&nbsp;</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone7plus-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 6s</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2015<br> Capacidade: 16, 32,&nbsp;64 e 128&nbsp;GB<br> Cores: cinza-espacial, prateado, dourado e ouro rosa<br> Número do modelo:&nbsp;A1633,&nbsp;A1688, A1700</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone-6s-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 6s Plus</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2015<br> Capacidade: 16, 32,&nbsp;64 e 128&nbsp;GB<br> Cores: cinza-espacial, prateado, dourado e ouro rosa<br> Número do modelo:&nbsp;A1634,&nbsp;A1687, A1699</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone-6splus-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 6</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2014<br> Capacidade: 16, 32, 64 e 128&nbsp;GB<br> Cores: cinza-espacial, prateado e dourado<br> Número do modelo:&nbsp;A1549,&nbsp;A1586,&nbsp;A1589</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone6-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 6 Plus</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2014<br> Capacidade: 16, 64 e 128&nbsp;GB<br> Cores: cinza-espacial, prateado e dourado<br> Número do modelo:&nbsp;A1522,&nbsp;A1524,&nbsp;A1593</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone6plus-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone SE</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2016<br> Capacidade: 16, 32, 64 e 128&nbsp;GB<br> Cores: cinza-espacial, prateado, dourado e ouro rosa<br> Número do modelo: A1723, A1662, A1724</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone-se-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 5S</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2013<br> Capacidade: 16, 32 e 64 GB<br> Cores: cinza-espacial, prateado e dourado<br> Número do modelo:&nbsp;A1453,&nbsp;A1457,&nbsp;A1518,&nbsp;A1528,<br> A1530,&nbsp;A1533</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone5s-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 5C</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2013<br> Capacidade: 16, 32 e 64 GB<br> Cores: branco, azul, rosa, verde e amarelo<br> Número do modelo: A1456, A1507, A1516, A1529, A1532</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone5c-colors.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPhone 5</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p>Ano de lançamento: 2012<br> Capacidade: 16, 32 e 64 GB<br> Cores: preto e branco<br> Número do modelo:&nbsp;A1428,&nbsp;A1429,&nbsp;A1442</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/iphone5-colors.jpg" /></div>
-                    </div>
-                    <hr><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                    <h1>Identificando o modelo do iPad</h1>
-                    <p>Saiba como identificar o modelo do iPad por meio do número do modelo</p>
-                    <div class="row">
-                      <p>Vá em <kbd>"Ajustes"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i><kbd>"Geral"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i><kbd>"Regulamentação"</kbd></p>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><img src="img/ipad-model.jpg" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro (12,9 polegadas) (2ª geração)</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2017<br> Tela Retina de 12,9 polegadas<br> Touch ID<br> Número do modelo: A1670, A1671 (Wi-Fi + Cellular)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-pro-12in-2gen.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro 10,5 polegadas</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2017<br> Tela Retina de 10,5 polegadas<br> Touch ID<br> Número do modelo: A1701 , A1709 (Wi-Fi + Cellular)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-pro-12.9in.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro 9,7 polegadas</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2016<br> Tela Retina de 9,7 polegadas<br> Touch ID<br> Número do modelo: A1673, A1674 , A1675 (Wi-Fi + Cellular)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-pro-9-7.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro 12,9 polegadas</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2015<br> Tela Retina de 12,9 polegadas<br> Touch ID<br> Número do modelo: A1584, A1652 (Wi-Fi + Cellular)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-pro.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro iPad Air 2</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2014<br> Tela Retina de 9,7 polegadas<br> Touch ID<br> Número do modelo: A1566, A1567 (Wi-Fi + Cellular)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-air2.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad Pro iPad Air</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: final de 2013 e início de 2014<br> Tela Retina de 9,7 polegadas<br> Número do modelo: A1474 no iPad Air Wi-Fi, A1475 no iPad Air Wi-Fi + Cellular, A1476 no iPad Air Wi-Fi + Cellular (TD-LTE) — lançado no início de 2014</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-air.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad mini 4</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: final de 2015<br> Tela Retina de 7,9 polegadas<br> Touch ID<br> Número do modelo: A1538, A1550 Wi-Fi + Cellular</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-mini4.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad mini 3</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: final de 2014<br> Tela Retina de 7,9 polegadas<br> Touch ID<br> Número do modelo: A1599, A1600 Wi-Fi + Cellular</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-mini3.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad mini 2</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: final de 2013 e início de 2014<br> Tela Retina de 7,9 polegadas<br> Número do modelo: A1489 Wi-Fi, A1490 Wi-Fi + Cellular, A1491 Wi-Fi + Cellular (TD-LTE) — lançado no início de 2014</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-mini2.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad mini</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: final de 2012<br> Número do modelo: A1432 Wi-Fi, A1454 Wi-Fi + Cellular, A1455 Wi-Fi + Cellular (MM)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-mini.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad (5ª geração)</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2017<br> Tela Retina de 9,7 polegadas<br> Touch ID<br> Número do modelo: A1822 Wi-Fi, A1823 Wi-Fi + Cellular</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-5gen.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad (4ª geração)</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2012<br> Tela Retina de 9,7 polegadas<br> Número do modelo: A1458 Wi-Fi, A1459 Wi-Fi + Cellular, A1460 Wi-Fi + Cellular (MM)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-4gen.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad (3ª geração)</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: início de 2012<br> Número do modelo: A1416 Wi-Fi, A1430 Wi-Fi + Cellular, A1403 Wi-Fi + Cellular (VZ)</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-3gen.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad 2</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2011<br> Número do modelo: A1395 Wi-Fi, A1396 modelo GSM, A1397 modelo CDMA</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad-2gen.png" /></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <h3>iPad</h3>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                        <blockquote>
-                          <p class="text-left">Ano de lançamento: 2010<br> Número do modelo: A1219 Wi-Fi, A1337 Wi-Fi + 3G</p>
-                        </blockquote>
-                      </div>
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="img/ipad/ipad.png" /></div>
-                    </div>
-                    <hr><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
-      <script src="js/agency.min.js"></script>
-      <script type="text/javascript">
-        $(document).ready(function(e) {
-          $('#header_outer').scrollToFixed();
-          $('.res-nav_click').click(function() {
-            $('.main-nav').slideToggle();
-            return false
-          });
-        });
-      </script>
-      <script>
-        wow = new WOW({
-          animateClass: 'animated',
-          offset: 100
-        });
-        wow.init();
-        document.getElementById('').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'wow fadeInDown';
-          section.className = 'wow shake';
-          section.className = 'wow zoomIn';
-          section.className = 'wow lightSpeedIn';
-          this.parentNode.insertBefore(section, this);
-        };
-      </script>
-      <script type="text/javascript">
-        $(window).load(function() {
-          $('a').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-              scrollTop: $($anchor.attr('href')).offset().top - 91
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-          });
-        })
-      </script>
-      <script type="text/javascript">
-        jQuery(document).ready(function($) {
-          var container = $('#portfolio-wrap');
-          container.isotope({
-            animationEngine: 'best-available',
-            animationOptions: {
-              duration: 200,
-              queue: false
-            },
-            layoutMode: 'fitRows'
-          });
-          $('#filters a').click(function() {
-            $('#filters a').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            container.isotope({
-              filter: selector
-            });
-            setProjects();
-            return false;
-          });
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107189652-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
 
-          function splitColumns() {
-            var winWidth = $(window).width(),
-              columnNumb = 1;
-            if (winWidth > 1024) {
-              columnNumb = 4;
-            } else if (winWidth > 900) {
-              columnNumb = 2;
-            } else if (winWidth > 479) {
-              columnNumb = 2;
-            } else if (winWidth < 479) {
-              columnNumb = 1;
-            }
-            return columnNumb;
-          }
+	function gtag() {
+		dataLayer.push(arguments)
+	};
+	gtag('js', new Date());
+	gtag('config', 'UA-107189652-1');
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="iPhone, ipad, repairs, screen replacement, Japan, Brasileiros no Japão">
+	<meta name="description" content="iPhone repairs">
+	<meta name="author" content="Maria Pysklevicz">
+	<title>iTechFix</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link href="css/agency.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/linecons.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+	$(document).ready(function(e) {
+		$('.res-nav_click').click(function() {
+			$('ul.toggle').slideToggle(600)
+		});
+		$(document).ready(function() {
+			$(window).bind('scroll', function() {
+				if($(window).scrollTop() > 0) {
+					$('#header_outer').addClass('fixed');
+				} else {
+					$('#header_outer').removeClass('fixed');
+				}
+			});
+		});
+	});
 
-          function setColumns() {
-            var winWidth = $(window).width(),
-              columnNumb = splitColumns(),
-              postWidth = Math.floor(winWidth / columnNumb);
-            container.find('.portfolio-item').each(function() {
-              $(this).css({
-                width: postWidth + 'px'
-              });
-            });
-          }
+	function resizeText() {
+		var preferredWidth = 767;
+		var displayWidth = window.innerWidth;
+		var percentage = displayWidth / preferredWidth;
+		var fontsizetitle = 25;
+		var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+		$(".divclass").css("font-size", newFontSizeTitle)
+	}
+	</script>
+</head>
 
-          function setProjects() {
-            setColumns();
-            container.isotope('reLayout');
-          }
-          container.imagesLoaded(function() {
-            setColumns();
-          });
-          $(window).bind('resize', function() {
-            setProjects();
-          });
-        });
-        $(window).load(function() {
-          jQuery('#all').click();
-          return false;
-        });
-      </script>
-      <script src="contactform/contactform.js"></script>
-  </body>
+<body>
+	<header id="header_outer">
+		<div class="container">
+			<div class="header_section">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" alt=""></a>
+				</div>
+				<nav class="nav" id="nav">
+					<ul class="toggle">
+						<li><a href="#top_content">Home</a></li>
+						<li><a href="#service">Serviços</a></li>
+						<li><a href="#pricing">Preços</a></li>
+						<li><a href="#plantao">Plantão</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+					<ul class="">
+						<li><a href="#top_content">Home</a></li>
+						<li><a href="#service">Serviços</a></li>
+						<li><a href="#pricing">Preços</a></li>
+						<li><a href="#plantao">Plantão</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+				</nav> <a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+		</div>
+	</header>
+	<section id="top_content" class="top_cont_outer">
+		<div class="top_cont_inner">
+			<div class="container">
+				<div class="top_content">
+					<div class="row">
+						<div class="col-lg-5 col-sm-7">
+							<div class="top_left_cont flipInY wow animated">
+								<h1 id="capa">iPhone &amp; iPad</h1>
+								<h2>Troca de tela<br> Troca de bateria &amp;<br> Troca de frame</h2> <a href="#service" class="btn btn-primary btn-lg">Saiba mais</a></div>
+						</div>
+						<div class="col-lg-7 col-sm-5"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="service" class="bg-light-gray">
+		<div id="portfolio" class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">Serviços</h2>
+					<h3 class="section-subheading text-muted">Confira nossos serviços</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content"> <i class="fa fa-plus fa-3x"></i></div>
+						</div> <img src="img/broken.png" class="img-responsive" alt=""> </a>
+					<div class="portfolio-caption">
+						<h4>iPhone</h4>
+						<p class="text-muted">Troca de Tela de iPhone</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content"> <i class="fa fa-plus fa-3x"></i></div>
+						</div> <img src="img/iphone-back-housing.png" class="img-responsive" alt=""> </a>
+					<div class="portfolio-caption">
+						<h4>Frame</h4>
+						<p class="text-muted">Troca de Frame de iPhone</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content"> <i class="fa fa-plus fa-3x"></i></div>
+						</div> <img src="img/iphone-battery.png" class="img-responsive" alt=""> </a>
+					<div class="portfolio-caption">
+						<h4>Bateria</h4>
+						<p class="text-muted">Troca de Bateria de iPhone</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content"> <i class="fa fa-plus fa-3x"></i></div>
+						</div> <img src="img/ipad-broken.png" class="img-responsive" alt=""> </a>
+					<div class="portfolio-caption">
+						<h4>iPad</h4>
+						<p class="text-muted">Troca de Tela de iPad</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h1>Identifique o Modelo de seu Aparelho</h1>
+						<h3 class="section-heading"><p> <button type="button" class="btn btn-primary btn-lg" href="#portfolioModal5" data-toggle="modal">&nbsp;&nbsp;iPhone&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-primary btn-lg" href="#portfolioModal6" data-toggle="modal">&nbsp;&nbsp;&nbsp;iPad&nbsp;&nbsp;&nbsp;</button></p></h3></div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div id="pricing" class="container">
+				<div class="text-center">
+					<h1>Preços</h1>
+					<p>&nbsp;&nbsp;</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-xs-12">
+						<div class="panel panel-it text-center">
+							<div class="panel-heading bg-blue txt-color">
+								<h3>Tela de iPhone</h3></div>
+							<div class="panel-body ">
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td>iPhone 6</td>
+											<td><i class="fa fa-jpy"></i>10000</td>
+										</tr>
+										<tr>
+											<td>iPhone 6+</td>
+											<td><i class="fa fa-jpy"></i>12000</td>
+										</tr>
+										<tr>
+											<td>iPhone 6S</td>
+											<td><i class="fa fa-jpy"></i>12000</td>
+										</tr>
+										<tr>
+											<td>iPhone 6S+</td>
+											<td><i class="fa fa-jpy"></i>14000</td>
+										</tr>
+										<tr>
+											<td>iPhone 7</td>
+											<td><i class="fa fa-jpy"></i>14000</td>
+										</tr>
+										<tr>
+											<td>iPhone 7+</td>
+											<td><i class="fa fa-jpy"></i>15000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="panel panel-it text-center">
+							<div class="panel-heading bg-blue txt-color">
+								<h3>iPhone Frame</h3></div>
+							<div class="panel-body ">
+								<p>&nbsp;&nbsp;</p>
+								<p><strong><h4>Back Frame</h4></strong></p>
+								<p><strong><span class=""><h4>Todos os Modelos</h4></span></strong></p>
+								<p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
+								<p><strong><span class=""><h4>A partir de</h4></span></strong></p>
+								<p><strong><h3><span class="text-primary"> <i class="fa fa-jpy" aria-hidden="true"></i>10.000 </span></h3></strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="panel panel-it text-center">
+							<div class="panel-heading bg-blue txt-color">
+								<h3>iPhone Bateria</h3></div>
+							<div class="panel-body ">
+								<p>&nbsp;&nbsp;</p>
+								<p><strong><span class=""><h4>Bateria</h4></span></strong></p>
+								<p><strong><span class=""><h4>Todos os Modelos</h4></span></strong></p>
+								<p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
+								<p><strong><h3><span class="text-primary"><i class="fa fa-jpy" aria-hidden="true"></i>7.000</span></h3></strong></p>
+								<p>&nbsp;&nbsp;</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="panel panel-it text-center">
+							<div class="panel-heading bg-blue txt-color">
+								<h3>Tela de iPad</h3></div>
+							<div class="panel-body ">
+								<p>&nbsp;&nbsp;</p>
+								<p><strong><span class=""><h4>Tela de iPad</h4></span></strong></p>
+								<p><strong><span class=""><h4>Todos os Modelos</h4></span></strong></p>
+								<p><strong><span class="">&nbsp;&nbsp;</span></strong></p>
+								<p><strong><span class=""><h4>&nbsp;&nbsp;</h4></span></strong></p>
+								<p><strong><h3><span class="text-primary"><i class="fa fa-jpy" aria-hidden="true"></i>15.000</span></h3></strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section id="plantao">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2 class="text-center">Plantão</h2>
+						<h3 class="text-center">Plantão de Troca de Tela de iPhone</h3>
+						<div class="col-md-6 col-lg-6 col-xs-12 col-md-offset-3">
+							<p><i class="fa fa-calendar fa-2x" aria-hidden="true"></i><span class="plant">&nbsp;15 de Outubro</span>
+								<br> <i class="fa fa-clock-o fa-2x " aria-hidden="true"></i> <span class="plant">&nbsp;13:00 ~ 19:30</span>
+								<br> &nbsp;<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span class="plant">&nbsp;&nbsp;&nbsp;Hekinan Central Community Center</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container-fluid">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5504.235551827791!2d136.99426441842473!3d34.88541308533545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x6004900c43271481%3A0xeafc8d2d93bac8c4!2z56Kn5Y2X5biC5Lit5aSu5YWs5rCR6aSo!3m2!1d34.8836416!2d136.9968587!5e0!3m2!1spt-BR!2sjp!4v1506482737656" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Contato</h2>
+						<h3 class="section-subheading text-muted">Envie-nos uma mensagem</h3></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<form action="mail/contact_me.php" method="post" name="sentMessage" id="contactForm" novalidate>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Seu Nome *" id="name" required data-validation-required-message="Por favor, digite seu nome.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Seu e-mail *" id="email" required data-validation-required-message="Por favor, digite seu endereço de email.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="seu telefone *" id="phone" required data-validation-required-message="Por favor, digite o número do seu telefone.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" placeholder="sua mensagem *" id="message" required data-validation-required-message="Por favor, digite sua mensagem."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"> <span class="copyright">Copyright &copy; iTechFix - 2016</span></div>
+					<div class="col-md-4">
+						<ul class="list-inline">
+							<li>
+								<a href="https://www.facebook.com/techfix.top/" target="_blank"> <span class="fa-stack fa-2x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/itechfix.top/" target="_blank"> <span class="fa-stack fa-2x"> <i class="fa fa-circle fa-stack-2x "></i> <i class="fa fa-instagram fa-stack-1x fa-inverse " ></i> </span> </a>
+							</li>
+							<li>
+								<a href="https://twitter.com/iTechFixtop" target="_blank"> <span class="fa-stack fa-2x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span> </a>
+							</li>
+							<!-- <li>
+								<a href="https://api.whatsapp.com/send?phone= phone number &text=Olá!" target="_blank"> <span class="fa-stack fa-2x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-whatsapp fa-stack-1x fa-inverse" ></i> </span> </a>
+							</li> -->
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline">
+							<li> <span class="fa-stack fa-2x"> <!-- <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i> </span></li>
+							<li>
+								<h4><span class="">Phone Number</span>--></h4></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>iPhone</h2>
+									<p class="item-intro text-muted">Troca de Tela de iPhone.</p> <img class="img-responsive img-centered" src="img/broken.png" alt="">
+									<p>Trocamos sua tela quebrada</p>
+									<p> <strong>Confira nossos preços</strong></p>
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th>Modelo</th>
+												<th>Preço</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>iPhone 5</td>
+												<td><i class="fa fa-jpy"></i>8000</td>
+											</tr>
+											<tr>
+												<td>iPhone 5S</td>
+												<td><i class="fa fa-jpy"></i>8000</td>
+											</tr>
+											<tr>
+												<td>iPhone 5C</td>
+												<td><i class="fa fa-jpy"></i>8000</td>
+											</tr>
+											<tr>
+												<td>iPhone SE</td>
+												<td><i class="fa fa-jpy"></i>12000</td>
+											</tr>
+											<tr>
+												<td>iPhone 6</td>
+												<td><i class="fa fa-jpy"></i>10000</td>
+											</tr>
+											<tr>
+												<td>iPhone 6+</td>
+												<td><i class="fa fa-jpy"></i>12000</td>
+											</tr>
+											<tr>
+												<td>iPhone 6S</td>
+												<td><i class="fa fa-jpy"></i>12000</td>
+											</tr>
+											<tr>
+												<td>iPhone 6S+</td>
+												<td><i class="fa fa-jpy"></i>14000</td>
+											</tr>
+											<tr>
+												<td>iPhone 7</td>
+												<td><i class="fa fa-jpy"></i>14000</td>
+											</tr>
+											<tr>
+												<td>iPhone 7+</td>
+												<td><i class="fa fa-jpy"></i>15000</td>
+											</tr>
+										</tbody>
+									</table>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>Frame</h2>
+									<p class="item-intro text-muted">Troca de Frame de iPhone.</p> <img class="img-responsive img-centered" src="img/iphone-back-housing.png" alt="">
+									<p>A troca do Frame (parte traseira do iPhone, apartir do iPhone 5 até o iPhone 7, são de metal) pode ser realizada quando existem danos, quando o aparelho entorta, quando depois de uma queda a tela não encaixa mais, ou simplesmente para customizar o aparelho.</p>
+									<p>Existem várias cores disponíveis, além das cores originais de seus respectivos modelos.</p>
+									<p> <strong>Confira nossos preços</strong></p>
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th>Modelo</th>
+												<th>Preço</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Todos os Modelos</td>
+												<td>apartir de <i class="fa fa-jpy"></i>10000</td>
+											</tr>
+										</tbody>
+									</table>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>Bateria</h2>
+									<p class="item-intro text-muted">Troca de Bateria.</p> <img class="img-responsive img-centered" src="img/iphone-battery.png" alt="">
+									<p>É aconselhavel realizar a troca da bateria quando,</p>
+									<ul class="list-unlisted">
+										<li> mesmo depois de carregar por várias horas, ela não carrega por completo</li>
+										<li>depois de pouco uso, a bateria descarrega quase totalmente</li>
+										<li>quando o aparelho esquenta demasiadamente durante o uso</li>
+									</ul><strong>Confira nossos preços</strong></p>
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th>Modelo</th>
+												<th>Preço</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Todos os Modelos</td>
+												<td><i class="fa fa-jpy"></i>7000</td>
+											</tr>
+										</tbody>
+									</table>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>iPad</h2>
+									<p class="item-intro text-muted">Troca de Tela de iPad.</p> <img class="img-responsive img-centered" src="img/ipad-broken.png" alt="">
+									<p>Trocamos a tela do seu iPad quebrada.
+										<br> Tempo necessário para troca 12hs.</p> <strong>Confira nossos preços</strong></p>
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th>Modelo</th>
+												<th>Preço</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Todos os Modelos</td>
+												<td><i class="fa fa-jpy"></i>15000</td>
+											</tr>
+										</tbody>
+									</table>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h1>Identificando o modelo do iPhone</h1>
+									<p>Saiba como identificar o modelo do iPhone por meio do número do modelo</p>
+									<div class="row">
+										<p>Vá em <kbd>"Ajustes"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i> <kbd>"Geral"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i> <kbd>"Regulamentação"</kbd></p>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "> <img src="img/find-model-iphone-1.png" /></div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "> <img src="img/find-model-iphone-2.png" /></div>
+									</div>
+									<div class="row">
+										<h3>iPhone 7</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2016
+													<br> Cores: preto matte, preto brilhante, dourado, ouro rosa e prateado, (PRODUCT)RED
+													<br> Número do modelo:&nbsp;A1660, A1778, A1779&nbsp;(Japão)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone7-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 7 Plus</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2016
+													<br> Capacidade: 32, 128 e 256&nbsp;GB
+													<br> Cores: preto matte, preto brilhante, dourado, ouro rosa e prateado, (PRODUCT)RED
+													<br> Número do modelo:&nbsp;A1661, A1784, A1785&nbsp;</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone7plus-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 6s</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2015
+													<br> Capacidade: 16, 32,&nbsp;64 e 128&nbsp;GB
+													<br> Cores: cinza-espacial, prateado, dourado e ouro rosa
+													<br> Número do modelo:&nbsp;A1633,&nbsp;A1688, A1700</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone-6s-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 6s Plus</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2015
+													<br> Capacidade: 16, 32,&nbsp;64 e 128&nbsp;GB
+													<br> Cores: cinza-espacial, prateado, dourado e ouro rosa
+													<br> Número do modelo:&nbsp;A1634,&nbsp;A1687, A1699</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone-6splus-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 6</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2014
+													<br> Capacidade: 16, 32, 64 e 128&nbsp;GB
+													<br> Cores: cinza-espacial, prateado e dourado
+													<br> Número do modelo:&nbsp;A1549,&nbsp;A1586,&nbsp;A1589</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone6-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 6 Plus</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2014
+													<br> Capacidade: 16, 64 e 128&nbsp;GB
+													<br> Cores: cinza-espacial, prateado e dourado
+													<br> Número do modelo:&nbsp;A1522,&nbsp;A1524,&nbsp;A1593</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone6plus-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone SE</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2016
+													<br> Capacidade: 16, 32, 64 e 128&nbsp;GB
+													<br> Cores: cinza-espacial, prateado, dourado e ouro rosa
+													<br> Número do modelo: A1723, A1662, A1724</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone-se-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 5S</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2013
+													<br> Capacidade: 16, 32 e 64 GB
+													<br> Cores: cinza-espacial, prateado e dourado
+													<br> Número do modelo:&nbsp;A1453,&nbsp;A1457,&nbsp;A1518,&nbsp;A1528,
+													<br> A1530,&nbsp;A1533</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone5s-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 5C</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2013
+													<br> Capacidade: 16, 32 e 64 GB
+													<br> Cores: branco, azul, rosa, verde e amarelo
+													<br> Número do modelo: A1456, A1507, A1516, A1529, A1532</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone5c-colors.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPhone 5</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p>Ano de lançamento: 2012
+													<br> Capacidade: 16, 32 e 64 GB
+													<br> Cores: preto e branco
+													<br> Número do modelo:&nbsp;A1428,&nbsp;A1429,&nbsp;A1442</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/iphone5-colors.jpg" /></div>
+									</div>
+									<hr>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h1>Identificando o modelo do iPad</h1>
+									<p>Saiba como identificar o modelo do iPad por meio do número do modelo</p>
+									<div class="row">
+										<p>Vá em <kbd>"Ajustes"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i> <kbd>"Geral"</kbd>,<i class="fa fa-arrow-right" aria-hidden="true"></i> <kbd>"Regulamentação"</kbd></p>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="img/ipad-model.jpg" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro (12,9 polegadas) (2ª geração)</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2017
+													<br> Tela Retina de 12,9 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1670, A1671 (Wi-Fi + Cellular)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-pro-12in-2gen.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro 10,5 polegadas</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2017
+													<br> Tela Retina de 10,5 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1701 , A1709 (Wi-Fi + Cellular)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-pro-12.9in.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro 9,7 polegadas</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2016
+													<br> Tela Retina de 9,7 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1673, A1674 , A1675 (Wi-Fi + Cellular)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-pro-9-7.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro 12,9 polegadas</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2015
+													<br> Tela Retina de 12,9 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1584, A1652 (Wi-Fi + Cellular)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-pro.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro iPad Air 2</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2014
+													<br> Tela Retina de 9,7 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1566, A1567 (Wi-Fi + Cellular)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-air2.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad Pro iPad Air</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: final de 2013 e início de 2014
+													<br> Tela Retina de 9,7 polegadas
+													<br> Número do modelo: A1474 no iPad Air Wi-Fi, A1475 no iPad Air Wi-Fi + Cellular, A1476 no iPad Air Wi-Fi + Cellular (TD-LTE) — lançado no início de 2014</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-air.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad mini 4</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: final de 2015
+													<br> Tela Retina de 7,9 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1538, A1550 Wi-Fi + Cellular</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-mini4.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad mini 3</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: final de 2014
+													<br> Tela Retina de 7,9 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1599, A1600 Wi-Fi + Cellular</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-mini3.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad mini 2</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: final de 2013 e início de 2014
+													<br> Tela Retina de 7,9 polegadas
+													<br> Número do modelo: A1489 Wi-Fi, A1490 Wi-Fi + Cellular, A1491 Wi-Fi + Cellular (TD-LTE) — lançado no início de 2014</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-mini2.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad mini</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: final de 2012
+													<br> Número do modelo: A1432 Wi-Fi, A1454 Wi-Fi + Cellular, A1455 Wi-Fi + Cellular (MM)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-mini.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad (5ª geração)</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2017
+													<br> Tela Retina de 9,7 polegadas
+													<br> Touch ID
+													<br> Número do modelo: A1822 Wi-Fi, A1823 Wi-Fi + Cellular</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-5gen.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad (4ª geração)</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2012
+													<br> Tela Retina de 9,7 polegadas
+													<br> Número do modelo: A1458 Wi-Fi, A1459 Wi-Fi + Cellular, A1460 Wi-Fi + Cellular (MM)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-4gen.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad (3ª geração)</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: início de 2012
+													<br> Número do modelo: A1416 Wi-Fi, A1430 Wi-Fi + Cellular, A1403 Wi-Fi + Cellular (VZ)</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-3gen.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad 2</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2011
+													<br> Número do modelo: A1395 Wi-Fi, A1396 modelo GSM, A1397 modelo CDMA</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad-2gen.png" /></div>
+									</div>
+									<hr>
+									<div class="row">
+										<h3>iPad</h3>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+											<blockquote>
+												<p class="text-left">Ano de lançamento: 2010
+													<br> Número do modelo: A1219 Wi-Fi, A1337 Wi-Fi + 3G</p>
+											</blockquote>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <img src="img/ipad/ipad.png" /></div>
+									</div>
+									<hr>
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script src="js/contact_me.js"></script>
+		<script src="js/agency.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(e) {
+			$('#header_outer').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+			});
+		});
+		</script>
+		<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+		document.getElementById('').onclick = function() {
+			var section = document.createElement('section');
+			section.className = 'wow fadeInDown';
+			section.className = 'wow shake';
+			section.className = 'wow zoomIn';
+			section.className = 'wow lightSpeedIn';
+			this.parentNode.insertBefore(section, this);
+		};
+		</script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$('a').bind('click', function(event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 91
+				}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+			});
+		})
+		</script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			var container = $('#portfolio-wrap');
+			container.isotope({
+				animationEngine: 'best-available',
+				animationOptions: {
+					duration: 200,
+					queue: false
+				},
+				layoutMode: 'fitRows'
+			});
+			$('#filters a').click(function() {
+				$('#filters a').removeClass('active');
+				$(this).addClass('active');
+				var selector = $(this).attr('data-filter');
+				container.isotope({
+					filter: selector
+				});
+				setProjects();
+				return false;
+			});
+
+			function splitColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = 1;
+				if(winWidth > 1024) {
+					columnNumb = 4;
+				} else if(winWidth > 900) {
+					columnNumb = 2;
+				} else if(winWidth > 479) {
+					columnNumb = 2;
+				} else if(winWidth < 479) {
+					columnNumb = 1;
+				}
+				return columnNumb;
+			}
+
+			function setColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = splitColumns(),
+					postWidth = Math.floor(winWidth / columnNumb);
+				container.find('.portfolio-item').each(function() {
+					$(this).css({
+						width: postWidth + 'px'
+					});
+				});
+			}
+
+			function setProjects() {
+				setColumns();
+				container.isotope('reLayout');
+			}
+			container.imagesLoaded(function() {
+				setColumns();
+			});
+			$(window).bind('resize', function() {
+				setProjects();
+			});
+		});
+		$(window).load(function() {
+			jQuery('#all').click();
+			return false;
+		});
+		</script>
+		<script src="contactform/contactform.js"></script>
+</body>
+
 </html>
